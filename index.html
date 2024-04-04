@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab-6</title>
+</head>
+<body>
+    <header>
+        <h1>Smallest number of given two numbers</h1>
+    </header>
+
+    <div class="grid-container">
+        <aside class="menu-sidebar">
+            <!-- Navigation links -->
+            <a href="#">First number</a>
+            <a href="#">Second number</a>
+<main class="main-content-area">
+        <button id="mybutton">SMALLEST NUM</button>
+        <p id="message"></p>
+        </aside>
+
+        <main class="main-content">
+            <h2>Giving two different numbers and getting their sum</h2>
+            <div class="container">
+                <!-- JavaScript interface content -->
+                <form id="additionForm">
+        <p><label for="num1">Enter the first number:</label>
+        <input type="number" id="num1" name="num1" required></p>
+
+
+        <p><label for="num2">Enter the second number:</label></p>
+        <input type="number" id="num2" name="num2" required>
+
+        <button type="button" onclick="findSmallest()">Find Smallest Number</button>
+    </form>
+<p id="result"></p>
+           </div>
+        </main>
+
+        <aside class="advertisement">
+            <!-- Amazon product image with a clickable link -->
+            <a href="https://www.amazon.com/Canon-Rebel-T7-18-55mm-II/dp/B07C2Z21X5/ref=asc_df_B07C2Z21X5/?tag=&linkCode=df0&hvadid=366307948963&hvpos=&hvnetw=g&hvrand=6084036692091210980&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030289&hvtargid=pla-684172875352&mcid=ec928e14c6c83bbf84d2eda388af67ef&ref=&adgrpid=74513439245&gclid=CjwKCAjwtqmwBhBVEiwAL-WAYQFbKsZHBcn2thYcKPB3gfx5ZH063iOon1Qtj65esg65v1tEhT6ZXRoCJNoQAvD_BwE&th=1" target="_blank">
+                 <img src="pic1.webp" alt="Amazon Product" width="350" height="250" >
+            </a>
+        </aside>
+    </div>
+
+    <footer>
+        <!-- Your addendum content goes here -->
+        <h2> <b> Addendum: </h2></b>
+<p><li>Here the user needed to enter first number and second number then after by clicking the smallest number button it will give the result by finding the smallest numbers above given two numbers.</p></li>
+<p><li> numbers will be entered in input boxes. And to get the result I have added button click.</p></li>
+<p><li> To solve the problem, I have converted the input values to floating-point numbers using the parseFloat function. And I used isNaN to check for proper numeric input.</p></li>
+<p><li> If the two numbers given are same then it says both the numbers are equal and if they are different the result will popup currectly by showing the smallest number.</p></li>
+<p><li> I haven't found more difficulties while creating this problem.</p></li>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+ <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</html>
